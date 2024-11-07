@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Gather Guide</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* Full-page background setup */
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Animation to change background images every 6 seconds */
+        @keyframes bgChange {
+            0% { background-image: url('C:/Users/Abhijith/Pictures/engagement.jpg'); }
+            16.67% { background-image: url('C:/Users/Abhijith/Pictures/Screenshots/Screenshot 2024-10-24 101337.png'); }
+            33.33% { background-image: url('C:/Users/Abhijith/Pictures/imagesforpro/outdoor.jpg'); }
+            50% { background-image: url('C:/Users/Abhijith/Pictures/imagesforpro/nikah.jpg'); }
+            66.67% { background-image: url('C:/Users/Abhijith/Pictures/imagesforpro/birthday.jpg'); }
+            83.33% { background-image: url('C:/Users/Abhijith/Pictures/deco.jpg'); }
+            100% { background-image: url('C:/Users/Abhijith/Pictures/engagement.jpg'); }
+        }
+
+        .hero-section {
+            animation: bgChange 36s infinite; /* Adjusted to 36 seconds for 6 images */
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin: 0;
+            z-index: 2;
+        }
+
+        .hero-section button {
+            background-color: #911057;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+        .hero-section button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Contact and Info section fixed to bottom */
+        .info-section {
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 2;
+            background-color: transparent; /* Make background transparent */
+        }
+
+        .info-section div {
+            flex: 1;
+            text-align: center;
+        }
+
+        .info-section .opening-hours,
+        .info-section .contact-info,
+        .info-section .social-links {
+            color: white; /* Set text color to white */
+        }
+
+        .social-links img {
+            height: 30px;
+            margin: 0 10px;
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        /* Dark overlay to ensure text is visible over images */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Main Hero Section -->
+<div class="hero-section">
+    <div class="overlay"></div>
+    <h1><b> Your Gather Guide:  </b>Let's Plan Your Perfect Event</h1>
+    <button onclick="location.href='register.htm'">Get Started</button> <!-- Updated button -->
+</div>
+
+<!-- Information Section at Bottom -->
+<div class="info-section">
+
+    <div class="contact-info">
+        <h3>Contact Info</h3>
+        <p>Phone: +91 1234567891<br>Email: yourgatherguide@gmail.com<br>Address: Kollam, Kerala</p>
+    </div>
+    <div class="social-links">
+        <h3>Follow Us</h3>
+        <a href="https://www.facebook.com/login" target="_blank"><img src="C:/Users/Abhijith/Pictures/New folder/facebook.jpg" alt="Facebook"></a>
+        <a href="https://twitter.com/yourpage" target="_blank"><img src="C:/Users/Abhijith/Pictures/New folder/twitter.jpg" alt="Twitter"></a>
+        <a href="https://instagram.com/yourpage" target="_blank"><img src="C:/Users/Abhijith/Pictures/New folder/insta.jpg" alt="Instagram"></a>
+    </div>
+</div>
+
+</body>
+</html>

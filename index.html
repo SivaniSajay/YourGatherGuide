@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendor Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Vendor Login</h1>
+    <button id="loginButton">Login</button>
+    <button id="notedButton">Noted</button>
+
+    <script>
+        // Redirect to upcoming events on login
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = 'upcomingEvents.html'; // Redirect to upcoming events page
+        });
+
+        // Redirect to event dashboard on "Noted"
+        document.getElementById('notedButton').addEventListener('click', function() {
+            window.location.href = 'eventDashboard.html'; // Redirect to event dashboard page
+        });
+    </script>
+</body>
+</html>
