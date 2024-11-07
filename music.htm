@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music and Entertainment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .entertainment-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        .entertainer-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.2s ease;
+        }
+
+        .entertainer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .entertainer-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .entertainer-card h2 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+
+        .entertainer-card .description {
+            font-size: 0.9em;
+            color: #555;
+            margin: 10px;
+        }
+
+        .entertainer-card .location {
+            color: #777;
+            font-size: 0.9em;
+            margin: 0 10px;
+        }
+
+        .entertainer-card .media {
+            margin: 10px;
+        }
+
+        .entertainer-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px;
+        }
+
+        .entertainer-card .tags span {
+            background-color: #efefef;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .wishlist-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .wishlist-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            width: 80%;
+            max-width: 800px;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Music and Entertainment for Your Event
+    </header>
+
+    <input type="text" class="search-bar" placeholder="Search for entertainers, DJs, bands..." />
+
+    <div class="entertainment-list">
+        <!-- Entertainer 1: The Jazz Band -->
+        <div class="entertainer-card">
+            <img src="path-to-band-image.jpg" alt="The Jazz Band">
+            <h2>The Jazz Band</h2>
+            <p class="location">Kochi, Kerala</p>
+            <p class="description">
+                A lively jazz band that creates the perfect atmosphere for weddings, corporate events, and evening parties. With decades of experience, The Jazz Band brings a mix of classic and contemporary jazz to your event.
+            </p>
+            <div class="tags">
+                <span>Jazz</span>
+                <span>Live Band</span>
+                <span>Wedding Entertainment</span>
+            </div>
+            <div class="media">
+                <p>Sample Performance:</p>
+                <audio controls>
+                    <source src="path-to-audio.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Entertainer 2: DJ Xtreme -->
+        <div class="entertainer-card">
+            <img src="path-to-dj-image.jpg" alt="DJ Xtreme">
+            <h2>DJ Xtreme</h2>
+            <p class="location">Cochin, Kerala</p>
+            <p class="description">
+                DJ Xtreme is one of the most popular DJs in the region, known for his electrifying mixes at parties and events. He specializes in both club and wedding music, catering to diverse tastes.
+            </p>
+            <div class="tags">
+                <span>DJ</span>
+                <span>Party Music</span>
+                <span>Wedding DJ</span>
+            </div>
+            <div class="media">
+                <p>Sample DJ Set:</p>
+                <audio controls>
+                    <source src="path-to-dj-set.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Entertainer 3: Sarah the Magician -->
+        <div class="entertainer-card">
+            <img src="path-to-magician-image.jpg" alt="Sarah the Magician">
+            <h2>Sarah the Magician</h2>
+            <p class="location">Thrissur, Kerala</p>
+            <p class="description">
+                Sarah is an expert magician who performs mind-bending tricks that are perfect for kids' parties, corporate functions, or family events. Her performances are filled with fun and surprise, leaving guests amazed.
+            </p>
+            <div class="tags">
+                <span>Magician</span>
+                <span>Kids Parties</span>
+                <span>Corporate Events</span>
+            </div>
+            <div class="media">
+                <p>Watch a Sample Performance:</p>
+                <video width="320" height="240" controls>
+                    <source src="path-to-magician-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Entertainer 4: Rajesh the Stand-Up Comedian -->
+        <div class="entertainer-card">
+            <img src="path-to-comedian-image.jpg" alt="Rajesh the Stand-Up Comedian">
+            <h2>Rajesh the Stand-Up Comedian</h2>
+            <p class="location">Kochi, Kerala</p>
+            <p class="description">
+                Rajesh is a hilarious comedian known for his unique take on life, marriage, and the quirks of everyday experiences. His stand-up shows are a hit at corporate events, parties, and weddings.
+            </p>
+            <div class="tags">
+                <span>Comedian</span>
+                <span>Stand-Up Comedy</span>
+                <span>Corporate Events</span>
+            </div>
+            <div class="media">
+                <p>Watch a Sample Comedy Routine:</p>
+                <video width="320" height="240" controls>
+                    <source src="path-to-comedy-video.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

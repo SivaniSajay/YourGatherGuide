@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Planning Website</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("food.jpeg"); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .vendor {
+            background-color: white;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .vendor h2 {
+            font-size: 1.5rem;
+            color: #333;
+            display: inline-block;
+        }
+
+        .top-rated {
+            font-style: italic;
+            font-size: 2rem;
+            color: gold;
+            margin-left: 10px;
+            vertical-align: middle;
+            display: inline-block;
+        }
+
+        .writing {
+            font-style: italic;
+            font-size: small;
+            color: black !important;
+        }
+
+        .vendor p, .vendor h3, .vendor ul li {
+            color: #666;
+        }
+
+        .vendor ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .vendor ul li {
+            padding: 0.5rem 0;
+        }
+
+        .vendor ul li strong {
+            color: #333;
+        }
+
+        .wishlist-button, .booking-button {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .wishlist-button:hover, .booking-button:hover {
+            background-color: #555;
+        }
+
+        
+
+        .review {
+            font-style: italic;
+            color: #333;
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Find the Flavor That Fits: Choose Your Vendor</h1>
+    </header>
+    <div class="container">
+        <!-- Vendor 1: Taste of Tuscany -->
+        <div class="vendor">
+            <h2>Taste of Tuscany <span class="top-rated">🏆</span></h2>
+            <p><strong>Starting Rate:</strong> ₹500 per person</p>
+            <div class="rating"> ⭐⭐⭐⭐⭐ 4.9/5</div>
+            <p><strong>Cuisine:</strong> Italian Cuisine</p>
+            <p><strong>Location:</strong> Trivandrum, Kerala</p>
+            <p><strong>Description:</strong> Offering an authentic Italian experience with handcrafted pasta, wood-fired pizza, and traditional Italian desserts. Perfect for weddings, corporate gatherings, and more!</p>
+            <h3>Menu</h3>
+            <ul>
+                <li><strong>Starters:</strong> Bruschetta, Caprese Salad</li>
+                <li><strong>Main Course:</strong> Margherita Pizza, Lasagna, Risotto</li>
+                <li><strong>Desserts:</strong> Tiramisu, Cannoli, Gelato</li>
+            </ul>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+            <h3>Customer Reviews</h3>
+            <p class="review">"The best Italian food I’ve had in a long time!" - Sarah</p>
+            <p class="review">"Absolutely loved the lasagna. Highly recommended!" - Alex</p>
+        </div>
+
+        <!-- Vendor 2: The Royal Feast -->
+        <div class="vendor">
+            <h2>The Royal Feast</h2>
+            <p><strong>Starting Rate:</strong> ₹400 per person</p>
+
+            <div class="rating"> ⭐⭐⭐⭐ 4.6/5</div>
+            <p><strong>Cuisine:</strong> Mughlai & North Indian Cuisine</p>
+            <p><strong>Location:</strong> Kochi, Kerala</p>
+            <p><strong>Description:</strong> A premium catering service known for its rich Mughlai and North Indian delicacies. Ideal for grand events like weddings and receptions.</p>
+            <h3>Menu</h3>
+            <ul>
+                <li><strong>Starters:</strong> Seekh Kebabs, Samosas</li>
+                <li><strong>Main Course:</strong> Butter Chicken, Dum Biryani, Rogan Josh</li>
+                <li><strong>Desserts:</strong> Gulab Jamun, Gajar Halwa, Ras Malai</li>
+            </ul>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+            <h3>Customer Reviews</h3>
+            <p class="review">"Rich flavors and authentic taste!" - Priya</p>
+            <p class="review">"Perfect for our wedding, the guests loved it." - Ramesh</p>
+        </div>
+
+        <!-- Continue this pattern for other vendors --><!-- Vendor 3: Coastal Spice -->
+<div class="vendor">
+    <h2>Coastal Spice <span class="top-rated">🏆</span></h2>
+    <p><strong>Starting Rate:</strong> ₹450 per person</p>
+
+    <p><strong>Cuisine:</strong> South Indian Coastal Cuisine</p>
+    <p><strong>Location:</strong> Kozhikode, Kerala</p>
+    <p><strong>Description:</strong> Specializes in fresh seafood and coastal delicacies, with a focus on Kerala's traditional cuisine.</p>
+    
+    <!-- Rating and Reviews -->
+    <div class="rating-review">
+        <p><strong>Starting Rate:</strong> ₹300 per person</p>
+
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐ 4.85/5</p>
+        <p><strong>Reviews:</strong></p>
+        <ul>
+            <li>"The seafood was fresh and delicious! Highly recommend their prawn masala." - Ravi K.</li>
+            <li>"Authentic Kerala flavors that made our event memorable." - Priya S.</li>
+        </ul>
+    </div>
+
+    <h3>Menu</h3>
+    <ul>
+        <li><strong>Starters:</strong> Fish Fry, Prawn Masala</li>
+        <li><strong>Main Course:</strong> Kerala Sadya, Meen Curry (Fish Curry), Malabar Parotta</li>
+        <li><strong>Desserts:</strong> Payasam, Banana Chips</li>
+    </ul>
+    <a href="#" class="wishlist-button">Add to Wishlist</a>
+</div>
+
+<!-- Vendor 4: Sweets & Treats -->
+<div class="vendor">
+    <h2>Sweets & Treats</h2>
+    <p><strong>Cuisine:</strong> Dessert & Bakery</p>
+    <p><strong>Location:</strong> Alappuzha, Kerala</p>
+    <p><strong>Description:</strong> Specializes in exquisite desserts, cakes, and custom-made treats for birthdays, parties, and weddings.</p>
+    
+    <!-- Rating and Reviews -->
+    <div class="rating-review">
+        <p><strong>Starting Rate:</strong> ₹250 per person</p>
+
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐ 4.25/5</p>
+        <p><strong>Reviews:</strong></p>
+        <ul>
+            <li>"The cake was exactly as we wanted it, both beautiful and delicious!" - Meera T.</li>
+            <li>"Their desserts were the highlight of our wedding reception." - Arun N.</li>
+        </ul>
+    </div>
+
+    <h3>Menu</h3>
+    <ul>
+        <li><strong>Cakes:</strong> Chocolate Cake, Red Velvet Cake, Cheesecake</li>
+        <li><strong>Pastries:</strong> Eclairs, Fruit Tartlets</li>
+        <li><strong>Iced Treats:</strong> Ice Cream Sundaes, Sorbet Station</li>
+    </ul>
+    <a href="#" class="wishlist-button">Add to Wishlist</a>
+</div>
+
+<!-- Vendor 5: Spice Junction -->
+<div class="vendor">
+    <h2>Spice Junction</h2>
+    <p><strong>Cuisine:</strong> Indian Fusion Cuisine</p>
+    <p><strong>Location:</strong> Kochi, Kerala</p>
+    <p><strong>Description:</strong> A fusion of Indian street food with a modern twist, offering vibrant and flavorful dishes for any event.</p>
+    
+    <!-- Rating and Reviews -->
+    <div class="rating-review">
+        <p><strong>Starting Rate:</strong> ₹500 per person</p>
+
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐ 4/5</p>
+        <p><strong>Reviews:</strong></p>
+        <ul>
+            <li>"The fusion dishes were amazing and unique. Everyone loved them!" - Sara M.</li>
+            <li>"Their pav bhaji was the best I've had. Great service too!" - Rajeev P.</li>
+        </ul>
+    </div>
+
+    <h3>Menu</h3>
+    <ul>
+        <li><strong>Starters:</strong> Pav Bhaji, Aloo Tikki Chaat</li>
+        <li><strong>Main Course:</strong> Paneer Butter Masala, Tandoori Roti, Pulao</li>
+        <li><strong>Desserts:</strong> Jalebi, Rasgulla</li>
+    </ul>
+    <a href="#" class="wishlist-button">Add to Wishlist</a>
+</div>
+
+<!-- Add similar rating and review sections for other vendors -->
+
+<!-- Vendor 6: The Green Plate -->
+<div class="vendor">
+    <h2>The Green Plate</h2>
+    <p><strong>Cuisine:</strong> Vegan & Vegetarian Cuisine</p>
+    <p><strong>Location:</strong> Trivandrum, Kerala</p>
+    <p><strong>Description:</strong> Exclusively vegan and vegetarian dishes, with a focus on healthy, organic ingredients.</p>
+    
+    <!-- Rating and Reviews -->
+    <div class="rating-review">
+        <p><strong>Starting Rate:</strong> ₹650 per person</p>
+
+        <p><strong>Rating:</strong> ⭐⭐⭐⭐ 4.2/5</p>
+        <p><strong>Reviews:</strong></p>
+        <ul>
+            <li>"Delicious vegan options that even non-vegans enjoyed!" - Sneha K.</li>
+            <li>"The chia pudding was a favorite. Would recommend for health-conscious events." - Vinod R.</li>
+        </ul>
+    </div>
+
+    <h3>Menu</h3>
+    <ul>
+        <li><strong>Starters:</strong> Hummus and Pita Bread, Vegan Spring Rolls</li>
+        <li><strong>Main Course:</strong> Vegan Biryani, Tofu Stir Fry</li>
+        <li><strong>Desserts:</strong> Vegan Chocolate Cake, Chia Pudding</li>
+    </ul>
+    <a href="#" class="wishlist-button">Add to Wishlist</a>
+</div>
+
+<!-- Repeat this structure for each vendor -->
+
+
+    </div>
+</body>
+</html>

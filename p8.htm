@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorator Profile with Reviews</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .profile-container { max-width: 800px; margin: auto; }
+        .profile-image { width: 100%; height: auto; border-radius: 10px; }
+        .details { text-align: center; }
+        .details h2 { margin: 10px 0; }
+        .tags { display: flex; gap: 10px; margin-top: 10px; }
+        .tag { background-color: #eee; padding: 5px 10px; border-radius: 5px; }
+        .button { background-color: #f76c6c; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-top: 20px; border-radius: 5px; }
+        .reviews-section { margin-top: 40px; }
+        .review { border-bottom: 1px solid #ddd; padding: 15px 0; }
+        .review-header { display: flex; justify-content: space-between; align-items: center; }
+        .reviewer-name { font-weight: bold; }
+        .review-date { font-size: 0.9em; color: #777; }
+        .rating { color: gold; font-size: 1.2em; }
+        .review-text { margin-top: 10px; font-style: italic; }
+    </style>
+</head>
+<body>
+
+<div class="profile-container">
+    <img src="path-to-decorator-image.jpg" alt="Decorator Image" class="profile-image">
+    <div class="details">
+        <h2>Happy Decor</h2>
+        <p>Location: Edappally, Kochi</p>
+        <p>Starting Price: ₹10,000 Onwards</p>
+        <div class="tags">
+            <span class="tag">Home Function Decor</span>
+            <span class="tag">Luxury Decor</span>
+            <span class="tag">Themed Decor</span>
+        </div>
+        <button class="button" onclick="addToWishlist()">Add to Wishlist</button>
+        <!-- Book Now button linking to booking page -->
+        <button class="button" onclick="bookNow()">Book Now</button>
+    </div>
+
+    <!-- Customer Reviews Section -->
+    <div class="reviews-section">
+        <h3>Customer Reviews</h3>
+
+        <div class="review">
+            <p class="customer-name">Manoj Pillai</p>
+            <p class="stars">★★★★★</p>
+            <p class="review-text">"Highly recommend! They went above and beyond to make our wedding look magical. I couldn’t be happier!"</p>
+        </div>
+    
+        <!-- Review 5 -->
+        <div class="review">
+            <p class="customer-name">Shweta Ramesh</p>
+            <p class="stars">★★★☆☆</p>
+            <p class="review-text">"Decent service overall. Some minor issues with the flowers, but they managed to fix it quickly."</p>
+        </div>
+            <p class="review-text">"Incredible experience! The decorations were exactly as I imagined, and they were on time and detail-oriented. Will definitely hire them again."</p>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <span class="reviewer-name">Priya Menon</span>
+                <span class="review-date">August 5, 2024</span>
+                <span class="rating">★★★★☆</span>
+            </div>
+            <p class="review-text">"Great service, but a bit on the pricier side. Overall, it was worth it because they brought our vision to life. Thank you!"</p>
+        </div>
+
+        <div class="review">
+            <div class="review-header">
+                <span class="reviewer-name">Arjun Verma</span>
+                <span class="review-date">July 29, 2024</span>
+                <span class="rating">★★★☆☆</span>
+            </div>
+            <p class="review-text">"The decor was good, but I wish they had more themes to choose from. Still, a good option for a simple setup."</p>
+        </div>
+
+        <!-- Add more reviews as needed -->
+    </div>
+</div>
+
+<script>
+    function addToWishlist() { alert("Added to Wishlist!"); }
+    function bookNow() { window.location.href = 'booking.html'; }
+</script>
+
+</body>
+</html>

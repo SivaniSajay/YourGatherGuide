@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Event Type - Event Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #911057;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        select {
+            font-size: 1.2em;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Select Your Event</h1>
+</header>
+
+<div class="container">
+    <label for="eventType">Choose your event type:</label>
+    <select id="eventType" onchange="redirectToEventPage()">
+        <option value="" disabled selected>Select Event Type</option>
+        <option value="wedding">Wedding</option>
+        <option value="birthday">Birthday</option>
+        <option value="corporate">Corporate Event</option>
+        <option value="engagement">Engagement</option>
+    </select>
+</div>
+
+<script>
+function redirectToEventPage() {
+    const eventType = document.getElementById('eventType').value;
+    if (eventType) {
+        // Mapping event type to respective pages
+        let redirectUrl = '';
+        switch (eventType) {
+            case 'wedding':
+                redirectUrl = 'newvendor.htm';
+                break;
+            case 'birthday':
+                redirectUrl = 'vs2.htm';
+                break;
+            case 'corporate':
+                redirectUrl = 'vs3.htm';
+                break;
+            case 'engagement':
+                redirectUrl ='newvendor.htm';
+                break;
+            default:
+                redirectUrl = 'newvendor.htm';
+                break;
+        }
+        window.location.href = redirectUrl; // Redirect to selected event's page
+    }
+}
+</script>
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Venues</title>
+    <style>
+        /* Basic Body and Header Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Venue List Styles */
+        .venue-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+
+        /* Venue Card Styles */
+        .venue-card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: left;
+            transition: transform 0.2s ease;
+        }
+
+        .venue-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .venue-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .venue-card h2 {
+            font-size: 1.2em;
+            margin: 10px;
+        }
+
+        .venue-card .location {
+            color: #777;
+            font-size: 0.9em;
+            margin: 0 10px;
+        }
+
+        .venue-card .description {
+            font-size: 0.9em;
+            color: #555;
+            margin: 10px;
+        }
+
+        .venue-card .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px;
+        }
+
+        .venue-card .tags span {
+            background-color: #efefef;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        .wishlist-button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .wishlist-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Event Venues in [City]
+    </header>
+
+    <div class="venue-list">
+        <!-- Venue 1: The Royal Banquet Hall -->
+        <div class="venue-card">
+            <img src="path-to-venue1.jpg" alt="The Royal Banquet Hall">
+            <h2>The Royal Banquet Hall</h2>
+            <p class="location">MG Road, Kochi</p>
+            <p class="description">
+                The Royal Banquet Hall is a luxurious venue that offers an elegant setting for grand weddings, corporate functions, and upscale parties. With its classic decor, crystal chandeliers, and spacious ballroom, this venue can accommodate up to 500 guests. The venue provides top-tier services, including catering, decoration, and a dedicated event coordinator to ensure your event goes off without a hitch.
+            </p>
+            <div class="tags">
+                <span>Weddings</span>
+                <span>Corporate Events</span>
+                <span>Galas</span>
+                <span>Large Parties</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 2: Beachside Pavilion -->
+        <div class="venue-card">
+            <img src="path-to-venue2.jpg" alt="Beachside Pavilion">
+            <h2>Beachside Pavilion</h2>
+            <p class="location">Vypin Island, Kochi</p>
+            <p class="description">
+                The Beachside Pavilion offers a stunning view of the Arabian Sea, making it the perfect venue for outdoor weddings, romantic sunset dinners, or beach parties. This open-air venue can host around 300 guests and is known for its relaxed yet luxurious atmosphere. A beachside wedding or event at this venue is ideal for those looking for a picturesque, natural backdrop with the sound of the waves as a serene soundtrack.
+            </p>
+            <div class="tags">
+                <span>Destination Weddings</span>
+                <span>Outdoor Parties</span>
+                <span>Beach Events</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 3: Skyline Conference Center -->
+        <div class="venue-card">
+            <img src="path-to-venue3.jpg" alt="Skyline Conference Center">
+            <h2>Skyline Conference Center</h2>
+            <p class="location">Kakkanad, Kochi</p>
+            <p class="description">
+                A state-of-the-art venue, the Skyline Conference Center is ideal for corporate meetings, seminars, and product launches. With modern facilities, high-tech audio-visual equipment, and a spacious conference room, it caters to the needs of professional events. The center offers various packages for corporate functions and comes with on-site catering and tech support for seamless presentations.
+            </p>
+            <div class="tags">
+                <span>Corporate Events</span>
+                <span>Conferences</span>
+                <span>Seminars</span>
+                <span>Training Sessions</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 4: Lavender Garden Resort -->
+        <div class="venue-card">
+            <img src="path-to-venue4.jpg" alt="Lavender Garden Resort">
+            <h2>Lavender Garden Resort</h2>
+            <p class="location">Athirappilly, Thrissur</p>
+            <p class="description">
+                Located amidst lush greenery, Lavender Garden Resort provides a tranquil and picturesque setting for weddings, anniversaries, and family gatherings. The venue offers an expansive garden area, perfect for outdoor ceremonies and intimate celebrations. With natural surroundings, a beautiful poolside area, and the option to customize your event's decor, this resort ensures a relaxed yet luxurious experience.
+            </p>
+            <div class="tags">
+                <span>Weddings</span>
+                <span>Family Reunions</span>
+                <span>Garden Parties</span>
+                <span>Anniversaries</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 5: The Crystal Courtyard -->
+        <div class="venue-card">
+            <img src="path-to-venue5.jpg" alt="The Crystal Courtyard">
+            <h2>The Crystal Courtyard</h2>
+            <p class="location">Edappally, Kochi</p>
+            <p class="description">
+                The Crystal Courtyard is a multi-purpose venue with a modern design and crystal-clear interiors, ideal for both corporate and personal events. The venue can host up to 250 guests and offers flexible layouts for weddings, birthday parties, exhibitions, and conferences. The venue provides a grand stage, a fully equipped sound system, and luxurious amenities for a seamless event experience.
+            </p>
+            <div class="tags">
+                <span>Weddings</span>
+                <span>Birthday Parties</span>
+                <span>Exhibitions</span>
+                <span>Product Launches</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 6: Sunset Terrace -->
+        <div class="venue-card">
+            <img src="path-to-venue6.jpg" alt="Sunset Terrace">
+            <h2>Sunset Terrace</h2>
+            <p class="location">Fort Kochi</p>
+            <p class="description">
+                Overlooking the beautiful backwaters of Kochi, the Sunset Terrace is a charming rooftop venue offering spectacular views of the sunset. Ideal for intimate gatherings, cocktail parties, and small weddings, the venue accommodates up to 150 guests. The relaxed ambiance, paired with exceptional food and beverage options, creates the perfect setting for an unforgettable event.
+            </p>
+            <div class="tags">
+                <span>Intimate Gatherings</span>
+                <span>Cocktail Parties</span>
+                <span>Rooftop Events</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 7: Heritage Palace Grounds -->
+        <div class="venue-card">
+            <img src="path-to-venue7.jpg" alt="Heritage Palace Grounds">
+            <h2>Heritage Palace Grounds</h2>
+            <p class="location">Trivandrum</p>
+            <p class="description">
+                For those seeking a regal venue with a rich history, Heritage Palace Grounds offers a breathtaking setting for large-scale weddings and cultural events. The palace’s intricate architecture, manicured lawns, and old-world charm provide a royal backdrop for celebrations. The venue also has a dedicated area for performances and live entertainment.
+            </p>
+            <div class="tags">
+                <span>Royal Weddings</span>
+                <span>Cultural Events</span>
+                <span>Large Gatherings</span>
+                <span>Performances</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 8: The Greenhouse Garden -->
+        <div class="venue-card">
+            <img src="path-to-venue8.jpg" alt="The Greenhouse Garden">
+            <h2>The Greenhouse Garden</h2>
+            <p class="location">Kottayam</p>
+            <p class="description">
+                A beautiful greenhouse venue surrounded by nature, The Greenhouse Garden offers a unique environment for weddings, garden parties, and wellness events. With an enchanting botanical garden, eco-friendly designs, and sustainable practices, this venue is perfect for nature lovers and those seeking an eco-conscious event. It offers a serene, peaceful atmosphere perfect for intimate gatherings.
+            </p>
+            <div class="tags">
+                <span>Eco-friendly Weddings</span>
+                <span>Garden Parties</span>
+                <span>Wellness Retreats</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 9: The Mansion at Heritage Villa -->
+        <div class="venue-card">
+            <img src="path-to-venue9.jpg" alt="The Mansion at Heritage Villa">
+            <h2>The Mansion at Heritage Villa</h2>
+            <p class="location">Alappuzha</p>
+            <p class="description">
+                The Mansion at Heritage Villa is a heritage-style venue located by the backwaters, offering a mix of traditional architecture and modern comforts. The venue is great for hosting grand weddings, cultural celebrations, and private events with its capacity of 350 guests. The villa has multiple event spaces, including an outdoor lawn, a dining hall, and a performance stage.
+            </p>
+            <div class="tags">
+                <span>Weddings</span>
+                <span>Cultural Celebrations</span>
+                <span>Private Events</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+        <!-- Venue 10: Riverside Banquet -->
+        <div class="venue-card">
+            <img src="path-to-venue10.jpg" alt="Riverside Banquet">
+            <h2>Riverside Banquet</h2>
+            <p class="location">Paravur, Ernakulam</p>
+            <p class="description">
+                For a serene riverside experience, the Riverside Banquet offers a peaceful retreat for weddings, parties, and outdoor events. The venue provides a spectacular view of the river and features a spacious lawn and banquet hall. With ample space for up to 400 guests, this venue is an excellent choice for nature-themed events or a relaxing destination event.
+            </p>
+            <div class="tags">
+                <span>Riverside Weddings</span>
+                <span>Outdoor Parties</span>
+                <span>Destination Events</span>
+            </div>
+            <a href="#" class="wishlist-button">Add to Wishlist</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

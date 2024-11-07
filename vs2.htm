@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Vendor Category</title>
+    <style>
+        /* Basic styling for the selection page */
+        body {
+            font-family: Arial, sans-serif;
+            background-image:"C:/Users/Abhijith/Pictures/imagesforpro/background.jpg";
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-size: 2em;
+            font-weight: bold;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        .category-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+            margin-top: 20px;
+        }
+
+        .category-card {
+            width: 200px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .category-card:hover {
+            transform: scale(1.05);
+        }
+
+        .category-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .category-card p {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>Select a Vendor Category</header>
+
+    <div class="category-list">
+        <!-- Photography Category -->
+        <div class="category-card" onclick="navigateTo('photogrpahy2.htm')">
+            <h2>Photography</h2>
+            <p>View photography vendors</p>
+        </div>
+
+        <!-- Venue Category -->
+        <div class="category-card" onclick="navigateTo('C:/Users/Abhijith/Desktop/venue.htm')">
+            <h2>Venue</h2>
+            <p>Browse available venues</p>
+        </div>
+
+        <!-- Decoration Category -->
+        <div class="category-card" onclick="navigateTo('weddeco.htm')">
+            <h2>Decoration</h2>
+            <p>Explore decoration options</p>
+        </div>
+
+        <!-- Food & Beverages Category -->
+        <div class="category-card" onclick="navigateTo('food.htm')">
+            <h2>Food & Beverages</h2>
+            <p>See food and beverage vendors</p>
+        </div>
+
+        <!-- Music & Entertainment Category -->
+        <div class="category-card" onclick="navigateTo('music.htm')">
+            <h2>Music & Entertainment</h2>
+            <p>Discover entertainment options</p>
+        </div>
+    </div>
+
+    <script>
+        // Function to navigate to a specific vendor page
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

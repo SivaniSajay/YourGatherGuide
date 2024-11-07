@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography Vendors - Event Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #911057;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        label, select {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .vendor-list {
+            margin-top: 20px;
+        }
+        .vendor-card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .vendor-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .vendor-rating {
+            color: gold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Select Your Photography Needs</h1>
+</header>
+
+<div class="container">
+    <label for="photographyType">What type of photography do you need?</label>
+    <select id="photographyType" onchange="filterVendors()">
+        <option value="" disabled selected>Select Type</option>
+        <option value="Formal Event Photography">Wedding Photography</option>
+        <option value="Candid Event Photography">Pre-Wedding Photography</option>
+        <option value="Product Photography ">Save the Date</option>
+        <option value="Environmental Photography">Haldi</option>
+        <option value="Other">Other(Choose as Complete Package)</option>
+
+
+    </select>
+
+    <div id="vendorList" class="vendor-list"></div>
+</div>
+
+<script>
+// Sample vendor data (You can replace this with actual data from your database)
+const vendors = [
+    { name: 'Capture Moments', rating: 4.9, image: 'path/to/photographer1.jpg', types: ['wedding', 'event'] },
+    { name: 'Photo Magic', rating: 4.7, image: 'path/to/photographer2.jpg', types: ['portrait', 'commercial'] },
+    { name: 'Wedding Clicks', rating: 4.5, image: 'path/to/photographer3.jpg', types: ['wedding', 'pre-wedding'] },
+    { name: 'Event Snappers', rating: 4.6, image: 'path/to/photographer4.jpg', types: ['event'] },
+    // Add more vendors as needed
+];
+
+// Function to filter and display vendors based on selected photography type
+function filterVendors() {
+    const selectedType = document.getElementById('photographyType').value;
+    const vendorList = document.getElementById('vendorList');
+    vendorList.innerHTML = ''; // Clear previous content
+
+    const filteredVendors = vendors.filter(vendor => vendor.types.includes(selectedType));
+
+    filteredVendors.forEach(vendor => {
+        const vendorCard = document.createElement('div');
+        vendorCard.className = 'vendor-card';
+        vendorCard.innerHTML = `
+            <img src="${vendor.image}" alt="${vendor.name}">
+            <p>${vendor.name}</p>
+            <p class="vendor-rating">Rating: ${vendor.rating}</p>
+        `;
+        vendorList.appendChild(vendorCard);
+    });
+
+    if (filteredVendors.length === 0) {
+        vendorList.innerHTML = '<p>No vendors available for this type.</p>';
+    }
+}
+
+// Optionally, get event type from URL parameters and use it
+const urlParams = new URLSearchParams(window.location.search);
+const eventType = urlParams.get('eventType');
+if (eventType) {
+    console.log(`Selected event type: ${eventType}`);
+}
+</script>
+
+</body>
+</html>
