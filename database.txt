@@ -1,0 +1,37 @@
+CREATE DATABASE eventsystem;
+
+
+
+
+CREATE TABLE event_planning (
+    user_id SERIAL PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    user_budget NUMERIC NOT NULL,
+    venue_name VARCHAR(100),
+    venue_price NUMERIC,
+    catering_name VARCHAR(100),
+    catering_price NUMERIC,
+    decoration_name VARCHAR(100),
+    decoration_price NUMERIC,
+    entertainment_name VARCHAR(100),
+    entertainment_price NUMERIC,
+    miscellaneous_name VARCHAR(100),
+    miscellaneous_price NUMERIC
+);
+INSERT INTO event_planning (
+    username,
+    user_budget,
+    venue_name, venue_price,
+    catering_name, catering_price,
+    decoration_name, decoration_price,
+    entertainment_name, entertainment_price,
+    miscellaneous_name, miscellaneous_price
+) VALUES (
+    'JohnDoe',
+    1500000,
+    'Banquet Hall', 2000000,
+    'Buffet', 1500000,
+    'Floral Setup', 500000,
+    'DJ', 800000,
+    'Security', 200000
+);

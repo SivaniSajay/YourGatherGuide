@@ -1,0 +1,44 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Budget Management</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Include Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container" id="budgetManagement">
+    <h1>Event Budget Management</h1>
+    <div id="userGreeting"></div>
+    <div id="budgetItems">
+      <!-- Dynamic budget items go here -->
+    </div>
+    <div class="total">
+      <span>Total Amount: </span><span id="totalAmount">₹0</span>
+    </div>
+    
+    <div class="budget-warning" id="budgetWarning">
+      <p>You have exceeded your budget!</p>
+      <p>What would you like to do?</p>
+      <button class="button" id="proceedButton">Proceed with Current Selections</button>
+      <button class="button" id="chooseAlternativeButton">Choose Options According to Budget</button>
+    </div>
+    
+    <a href="#" class="expense-link" id="showBreakdown">Click to See Expense Breakdown</a>
+  </div>
+
+  <div class="container chart-container" id="expenseBreakdown">
+    <h1>Expense Breakdown</h1>
+    <canvas id="expenseChart"></canvas>
+    <a href="#" class="expense-link" id="backToBudget">Back to Budget Management</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
